@@ -4,6 +4,7 @@
 .contenedor {
   display:flex;
   align-items: center;
+  justify-content: space-between;
   
 }
 
@@ -15,9 +16,10 @@
  }
 
   .navbar {
-    width: 100%;
+    
     background-color: $white;
     overflow: auto;
+    width: 331px;
   }
   
   .navbar a {
@@ -47,5 +49,14 @@
       float: none;
       display: block;
 
+    }
+  }
+
+  .espacio{
+    @media screen and (max-width: 500px){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
   }

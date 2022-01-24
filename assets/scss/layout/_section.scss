@@ -5,10 +5,9 @@
   padding-left: 50px;
   padding-right: 50px;
   background-color: $smokyBlack;
-  margin-right: 50px;
+  width: 100%;
   color: $white;
-  line-height: 1.4
-  ;
+  line-height: 1.4;
 
   &__email {
     font-family: $oldStanford;
@@ -21,19 +20,36 @@
     font-family: $oldStanford;
     font-weight: $oldStanfordBold;
     font-size: $fz-xx-large;
-
   }
-  
 }
 
 //Suscription section
-
+footer {
+  display: flex;
+  position: relative;
+}
 .suscription {
+  display: inline-block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 30px;
+  
+ 
+  
   &__suscriber {
+    font-family: $oldStanford;
+    font-weight: $oldStanfordBold;
     
-    rotate:(-90deg); 
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;   
-  }
+    font-size: 20px;
+    color: black;
+    writing-mode: vertical-lr;
+    position: absolute;
+    right: 0;
+    
+  
+}
+&__suscriber a{
+  text-decoration: none;
+}
+
 }

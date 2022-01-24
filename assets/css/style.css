@@ -69,6 +69,10 @@ table {
   color: #fff;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .article {
   text-align: start;
   margin: 20px 50px 20px 50px;
@@ -104,6 +108,7 @@ table {
 .contenedor {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -114,9 +119,9 @@ table {
 }
 
 .navbar {
-  width: 100%;
   background-color: #fff;
   overflow: auto;
+  width: 331px;
 }
 
 .navbar a {
@@ -146,12 +151,21 @@ table {
     display: block;
   }
 }
+@media screen and (max-width: 500px) {
+  .espacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
 .newsletter {
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #0c0910;
-  margin-right: 50px;
+  width: 100%;
   color: #fff;
   line-height: 1.4;
 }
@@ -168,11 +182,28 @@ table {
   font-size: 30px;
 }
 
+footer {
+  display: flex;
+  position: relative;
+}
+
+.suscription {
+  display: inline-block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 30px;
+}
 .suscription__suscriber {
-  rotate: -90deg;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  writing-mode: vertical-lr;
+  position: absolute;
+  right: 0;
+}
+.suscription__suscriber a {
+  text-decoration: none;
 }
 
 /* @import "vendors/vendors"; */
