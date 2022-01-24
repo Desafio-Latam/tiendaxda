@@ -1,0 +1,25 @@
+//imagen hero
+
+.model {
+         
+    background-image: url(/img/imagen1.png);
+    background-repeat: no-repeat;    
+    height: 200px;
+    background-position: top;
+    justify-content: center;
+    background-size:90%;
+    padding: 0;
+    &__hero {
+        
+        
+        
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .model {
+        overflow-y: hidden;
+    }
+}

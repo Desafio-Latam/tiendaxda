@@ -1,0 +1,51 @@
+/*Responsive Movil*/
+
+/*no me funciono el metodo BEM*/
+.contenedor {
+  display:flex;
+  align-items: center;
+  
+}
+
+ .logo{
+   background-color: $smokyBlack;
+   color:$white;
+   padding: 25px;
+   font-family: $oldStanford;
+ }
+
+  .navbar {
+    width: 100%;
+    background-color: $white;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: $smokyBlack;
+    text-decoration: none;
+    font-size: $fz-medium;
+    font-family: $raleway;
+    font-weight: $ralewayBold;
+  }
+  
+  .navbar a:hover {
+    background-color: $smokyBlack;
+    color: $white;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .contenedor {
+      display:flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+    }
+    .navbar a {
+      float: none;
+      display: block;
+
+    }
+  }

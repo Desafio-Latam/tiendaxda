@@ -1,0 +1,39 @@
+//Input suscribe
+
+.newsletter {
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: $smokyBlack;
+  margin-right: 50px;
+  color: $white;
+  line-height: 1.4
+  ;
+
+  &__email {
+    font-family: $oldStanford;
+    font-weight: $oldStanfordRegular;
+  }
+  &__input {
+    width: 100%;
+  }
+  &__title {
+    font-family: $oldStanford;
+    font-weight: $oldStanfordBold;
+    font-size: $fz-xx-large;
+
+  }
+  
+}
+
+//Suscription section
+
+.suscription {
+  &__suscriber {
+    
+    rotate:(-90deg); 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;   
+  }
+}

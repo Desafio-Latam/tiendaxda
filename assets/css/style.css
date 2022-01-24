@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  margin: 0px 50px 20px 50px;
+}
+.button__goShop {
+  background-color: #fff;
+  border: 2px solid #646266;
+  color: #646266;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button__goShop:hover {
+  background-color: #646266;
+  color: #fff;
+}
+
+.article {
+  text-align: start;
+  margin: 20px 50px 20px 50px;
+}
+.article__paragraph {
+  letter-spacing: 2px;
+  font-family: "Raleway", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+}
+.article__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.model {
+  background-image: url(/img/imagen1.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: top;
+  justify-content: center;
+  background-size: 90%;
+  padding: 0;
+}
+@media screen and (max-width: 500px) {
+  .model {
+    overflow-y: hidden;
+  }
+}
+/*Responsive Movil*/
+/*no me funciono el metodo BEM*/
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: #0c0910;
+  color: #fff;
+  padding: 25px;
+  font-family: "Old Standard TT", serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #0c0910;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Raleway", "sans-serif";
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  background-color: #0c0910;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.newsletter {
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #0c0910;
+  margin-right: 50px;
+  color: #fff;
+  line-height: 1.4;
+}
+.newsletter__email {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+}
+.newsletter__input {
+  width: 100%;
+}
+.newsletter__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.suscription__suscriber {
+  rotate: -90deg;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+/* @import "vendors/vendors"; */
+
+/*# sourceMappingURL=style.css.map */
