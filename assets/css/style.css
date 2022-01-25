@@ -73,6 +73,11 @@ table {
   clear: both;
 }
 
+@media only screen and (min-width: 768px) {
+  .button {
+    margin: 0px 30px 10px 30px;
+  }
+}
 .article {
   text-align: start;
   margin: 20px 50px 20px 50px;
@@ -92,10 +97,10 @@ table {
 .model {
   background-image: url(/img/imagen1.png);
   background-repeat: no-repeat;
-  height: 200px;
+  height: 350px;
   background-position: top;
   justify-content: center;
-  background-size: 90%;
+  background-size: 100%;
   padding: 0;
 }
 @media screen and (max-width: 500px) {
@@ -196,11 +201,13 @@ footer {
 .suscription__suscriber {
   font-family: "Old Standard TT", serif;
   font-weight: 700;
+  padding-right: 4px;
   font-size: 20px;
   color: black;
   writing-mode: vertical-lr;
   position: absolute;
   right: 0;
+  text-align: center;
 }
 .suscription__suscriber a {
   text-decoration: none;

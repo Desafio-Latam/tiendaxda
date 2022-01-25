@@ -39,12 +39,13 @@ footer {
   &__suscriber {
     font-family: $oldStanford;
     font-weight: $oldStanfordBold;
-    
+    padding-right: 4px;
     font-size: 20px;
     color: black;
     writing-mode: vertical-lr;
     position: absolute;
     right: 0;
+    text-align: center;
     
   
 }
